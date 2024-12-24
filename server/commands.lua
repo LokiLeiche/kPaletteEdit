@@ -40,7 +40,7 @@ RegisterCommand('setcolor', function(source, args)
         return
     end
 
-    exports['kPedBlend']:SetHeadBlendPaletteColor(source, index, r, g, b)
+    exports['kPaletteEdit']:SetHeadBlendPaletteColor(source, index, r, g, b)
 end, false)
 
 
@@ -56,6 +56,6 @@ RegisterCommand('randomcolors', function(source)
         })
     end
 
-    exports['kPedBlend']:SetHeadBlendPaletteColors(source, colors)
+    exports['kPaletteEdit']:SetHeadBlendPaletteColors(source, colors)
 end, false)
 
